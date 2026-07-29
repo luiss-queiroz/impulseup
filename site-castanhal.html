@@ -296,6 +296,29 @@
   .impl-legend{margin-top:32px;padding-top:20px;border-top:1px solid var(--color-border);display:flex;gap:22px;flex-wrap:wrap;font-size:12px;color:var(--color-fg-muted);}
   .impl-legend-item{display:flex;align-items:center;gap:6px;}
   .impl-legend-dot{width:10px;height:10px;border-radius:50%;}
+
+  /* ABA 7 — MODELO V4 (cadeia de etapas por módulo, corrigido: CSS ausente até agora) */
+  .impl-processo{display:flex;flex-direction:column;gap:0;}
+  .impl-suporte-note{background:var(--color-bg-alt);border-left:3px solid #4B4B8A;border-radius:8px;padding:12px 16px;font-size:12.5px;color:var(--color-fg-muted);margin-bottom:20px;line-height:1.6;}
+  .impl-suporte-note b{color:var(--color-fg);}
+  .impl-weeklies-note{background:#FBEAF0;border-left:3px solid var(--color-primary);border-radius:8px;padding:12px 16px;font-size:12.5px;color:var(--color-fg);margin-bottom:20px;line-height:1.6;}
+  .impl-weeklies-note b{color:var(--color-primary);}
+  .impl-rows{display:flex;flex-direction:column;gap:30px;}
+  .impl-row-label{display:flex;align-items:center;gap:8px;font-size:14.5px;font-weight:700;margin-bottom:14px;}
+  .impl-dot{width:8px;height:8px;border-radius:50%;background:var(--color-primary);flex-shrink:0;}
+  .impl-row-empty{font-size:12.5px;color:var(--color-fg-muted);font-style:italic;}
+  .impl-chain{display:flex;align-items:flex-start;flex-wrap:wrap;row-gap:16px;}
+  .impl-step-unit{display:flex;flex-direction:column;align-items:center;gap:6px;}
+  .impl-box{background:var(--color-surface);border:1px solid var(--color-border);border-radius:10px;padding:10px 14px;font-size:12.5px;font-weight:600;text-align:center;min-width:120px;color:var(--color-fg);}
+  .impl-box-weeklies{border-color:var(--color-primary);background:#FBEAF0;}
+  .impl-tag-weeklies{font-size:9.5px;font-weight:700;color:var(--color-primary);text-transform:uppercase;letter-spacing:0.03em;}
+  .impl-arrow{display:flex;align-items:center;color:var(--color-border);font-size:16px;padding:0 10px;align-self:center;margin-top:-16px;}
+  .impl-handoff-divider{border-left:2px dashed var(--color-primary);align-self:stretch;margin:-6px 12px 0;min-width:0;}
+  .role-tag{font-size:10px;font-weight:600;padding:2px 9px;border-radius:14px;white-space:nowrap;}
+  .role-consultor{background:#FCE4F2;color:var(--color-primary-hover);}
+  .role-gerente{background:#111;color:#fff;}
+  .role-suporte{background:#EAEAF6;color:#4B4B8A;}
+  @media (max-width:700px){.impl-chain{flex-direction:column;align-items:stretch;}.impl-arrow{transform:rotate(90deg);margin:0;align-self:flex-start;}.impl-handoff-divider{border-left:none;border-top:2px dashed var(--color-primary);width:100%;margin:4px 0;}}
   /* ABA 8 — COMPARATIVO DE CENÁRIOS (2 ou 3 alternativas simultâneas) */
   .cenarios-comparativo .cards{display:grid;grid-template-columns:repeat(3, 1fr);gap:18px;margin-bottom:36px;}
   @media (max-width:900px){.cenarios-comparativo .cards{grid-template-columns:1fr;}}
