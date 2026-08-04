@@ -131,11 +131,12 @@
   .logo-grid-slot:hover{border-color:var(--color-primary);}
 
   .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:40px;}
-  .positioning-card{background:#DCE9FA;border-radius:14px;padding:22px 24px 16px;margin-bottom:32px;}
+  .positioning-card{background:#FBEAF0;border-radius:14px;padding:22px 24px 16px;margin-bottom:32px;}
   .positioning-line{font-size:15px;font-weight:600;color:var(--color-fg);line-height:1.55;margin-bottom:18px;}
-  .positioning-badges{display:flex;flex-wrap:wrap;gap:28px;border-top:1px solid rgba(0,0,0,0.08);padding-top:14px;}
+  .positioning-badges{display:flex;flex-wrap:wrap;justify-content:center;gap:28px;border-top:1px solid rgba(0,0,0,0.08);padding-top:14px;}
   .positioning-badge{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--color-fg);}
   .positioning-badge i{color:var(--color-primary);font-size:14px;}
+  .positioning-badge .strike-text{text-decoration:line-through;text-decoration-color:var(--color-primary);text-decoration-thickness:2px;}
   .logo-grid.logo-grid-fixed5{grid-template-columns:repeat(5,1fr);}
   .pillar-card{border:1px solid var(--color-border);border-radius:12px;padding:20px;}
   .pillar-card .pillar-num{font-size:12px;font-weight:700;color:var(--color-primary);margin-bottom:8px;display:block;}
@@ -450,7 +451,7 @@
       <div class="positioning-card">
         <p class="positioning-line">O mercado tenta resolver tudo do RH em um só lugar — como se fosse simples. A impulseup escolheu o caminho oposto: menos módulos genéricos, mais profundidade em performance e desenvolvimento.</p>
         <div class="positioning-badges">
-          <span class="positioning-badge"><i class="fa-regular fa-rectangle-list"></i>Sem planilhas</span>
+          <span class="positioning-badge"><i class="fa-regular fa-rectangle-list"></i><span class="strike-text">Sem planilhas</span></span>
           <span class="positioning-badge"><i class="fa-solid fa-bolt"></i>Fácil de usar</span>
           <span class="positioning-badge"><i class="fa-solid fa-sliders"></i>Do seu jeito</span>
           <span class="positioning-badge"><i class="fa-regular fa-lightbulb"></i>Insights de verdade</span>
